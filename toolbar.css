@@ -1,0 +1,86 @@
+#toolbar{
+position: absolute;
+    top: 93%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 320px;
+    height: 60px;
+}
+
+#toolbar::before{
+    content: '\f04b';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,#f9b30e,#FFFFFF);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 40px;
+    margin:0 2px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#toolbar:hover::before{
+    width:60px;
+}
+#toolbar li{
+    position: absolute;
+    list-style: none;
+    transition: 1s;
+}
+#toolbar li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position:absolute;
+    text-align: center;
+	
+    background: #262626;
+    color: #fff;
+    margin: 0 2px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 1s;
+
+}
+
+#toolbar li a i{
+	position:absolute;
+    margin-top:25%;
+	margin-left:-15%;
+
+}
+
+#lyricicon{
+position:absolute;
+
+}
+
+#buttontag{
+font-size: 20px;
+color:white;
+position:absolute;
+margin-top:20px;
+margin-left:-20%;
+}
+
+#toolbar:hover li:nth-child(1) a{
+    transform: translateX(64px) rotate(360deg);
+}
+#toolbar:hover li:nth-child(2) a{
+    transform: translateX(128px) rotate(360deg);
+}
+#toolbar:hover li:nth-child(3) a{
+    transform: translateX(192px) rotate(360deg);
+}
+#toolbar:hover li:nth-child(4) a{
+    transform: translateX(256px) rotate(360deg);
+}
